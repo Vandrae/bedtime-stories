@@ -13,7 +13,8 @@ public class Stories {
 
         //both readers inside try for catch to work
         try {
-            FileReader fileReader = new FileReader("src/main/resources/goldilocks.txt");
+            // "src/main/resources/" and story variable to get the exact story they want
+            FileReader fileReader = new FileReader("src/main/resources/" + story);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             //to get the same result but without the exact file name id prob use an if statement
